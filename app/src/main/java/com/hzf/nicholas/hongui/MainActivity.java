@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import org.litepal.LitePal;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button mSearchWidgetBtn;
@@ -14,9 +16,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //LitePal.initialize(this);
         setContentView(R.layout.activity_main);
         initElement();
         mSearchWidgetBtn.setOnClickListener(this);
+
     }
 
     private void initElement(){
