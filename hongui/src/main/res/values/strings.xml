@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SearchWidgetLib</string>
+
+    <!--search_widget-->
+    <string name="search_hint">搜索</string>
+    <string name="search_history">历史记录</string>
+    <string name="search_popular">热门搜索</string>
+    <!--AlertDialog-->
+    <string name="alert_dialog_title">提示！</string>
+    <string name="alert_dialog_ok">是</string>
+    <string name="alert_dialog_cancel">否</string>
+    <string name="alert_dialog_ok_toast">操作已完成！</string>
+    <string name="alert_dialog_cancel_toast">操作已取消！</string>
+    <string name="alert_dialog_msg_for_search_activity">是否删除所有历史记录？</string>
+
+</resources>

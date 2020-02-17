@@ -1,0 +1,11 @@
+<resources>
+
+    <declare-styleable name="SearchWidget">
+        <attr name="title_hint" format="string" />
+        <attr name="history" format="string" />
+        <attr name="left_icon_iv" format="reference" />
+        <attr name="right_icon_iv" format="reference" />
+        <attr name="empty_icon_iv" format="reference" />
+    </declare-styleable>
+
+</resources>
