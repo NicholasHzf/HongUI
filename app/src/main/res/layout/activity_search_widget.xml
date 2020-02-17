@@ -10,6 +10,8 @@
     <com.hzf.nicholas.custom_ui.SearchWidget
         android:id="@+id/search_widget"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:history="History Record"
+        app:title_hint="hint text" />
 
 </LinearLayout>
