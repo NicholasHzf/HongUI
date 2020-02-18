@@ -10,9 +10,9 @@ Create this HongUI repository just for personal interest.
 
 **screenshot**
 
-![GitHub](https://github.com/NicholasHzf/HongUI/blob/master/screenshot/search_widget_1.png) 
-![GitHub](https://github.com/NicholasHzf/HongUI/blob/master/screenshot/search_widget_2.png) 
-![GitHub](https://github.com/NicholasHzf/HongUI/blob/master/screenshot/search_widget_3.png) 
+![GitHub](https://github.com/NicholasHzf/HongUI/raw/master/screenshot/search_widget_1.png) 
+![GitHub](https://github.com/NicholasHzf/HongUI/raw/master/screenshot/search_widget_2.png) 
+![GitHub](https://github.com/NicholasHzf/HongUI/raw/master/screenshot/search_widget_3.png) 
 ![GitHub](https://github.com/NicholasHzf/HongUI/raw/master/screenshot/search_widget_4.png) 
 
 **How to use:**
