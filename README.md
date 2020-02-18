@@ -3,6 +3,8 @@ Create this HongUI repository just for personal interest.
 
 ---
 
+[CSDN Blog](https://blog.csdn.net/Nicholas1hzf/article/details/104377358)
+
 ## a search widget with history records 
 ##### 一个带有历史记录的搜索框
 
