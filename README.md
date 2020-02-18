@@ -9,10 +9,10 @@ Create this HongUI repository just for personal interest.
 - 2020.2.18 version:1.1.0 更新：新增自动补全功能，修改了点击事件的参数，添加截图
 
 **screenshot**
-![](https://github.com/NicholasHzf/HongUI/raw/master/screenshot/search_widget_1) 
-![](https://github.com/NicholasHzf/HongUI/raw/master/screenshot/search_widget_2) 
-![](https://github.com/NicholasHzf/HongUI/raw/master/screenshot/search_widget_3) 
-![](https://github.com/NicholasHzf/HongUI/raw/master/screenshot/search_widget_4) 
+![](https://github.com/NicholasHzf/HongUI/raw/master/screenshot/search_widget_1.png) 
+![](https://github.com/NicholasHzf/HongUI/raw/master/screenshot/search_widget_2.png) 
+![](https://github.com/NicholasHzf/HongUI/raw/master/screenshot/search_widget_3.png) 
+![](https://github.com/NicholasHzf/HongUI/raw/master/screenshot/search_widget_4.png) 
 
 **How to use:**
 
