@@ -23,6 +23,8 @@ import com.google.android.flexbox.FlexboxLayoutManager;
 
 import org.litepal.LitePal;
 
+import java.util.Arrays;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -41,6 +43,7 @@ public class SearchWidget extends LinearLayout {
     private RelativeLayout mRelativeLayout;
     private RecyclerView mHistoryRV;
     private SRForRV mAdapter;
+    private ArrayAdapter mArrayAdapter;
 
     public SearchWidget(final Context context, AttributeSet attrs) {
         super(context,attrs);
@@ -64,8 +67,8 @@ public class SearchWidget extends LinearLayout {
         mHistoryRV.setLayoutManager(layoutManager);
         mHistoryRV.setAdapter(mAdapter);
 
-        ArrayAdapter arrayAdapter = new ArrayAdapter(context,android.R.layout.simple_list_item_1,SearchRecordLab.get(context).getHistoryToStringList());
-        mAutoCompleteTextView.setAdapter(arrayAdapter);
+        mArrayAdapter = new ArrayAdapter(context,android.R.layout.simple_list_item_1,SearchRecordLab.get(context).getHistoryToStringList());
+        mAutoCompleteTextView.setAdapter(mArrayAdapter);
 
         /*
             每一个属性集合编译之后都会对应一个styleable对象,
@@ -113,6 +116,7 @@ public class SearchWidget extends LinearLayout {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         SearchRecordLab.get(context).clearSearchRecords();
                         mAdapter.notifyDataSetChanged();
+                        mArrayAdapter.clear();
                         Toast.makeText(context,getResources().getString(R.string.alert_dialog_ok_toast),Toast.LENGTH_SHORT).show();
                     }
                 });
@@ -139,7 +143,7 @@ public class SearchWidget extends LinearLayout {
             @Override
             public void onClick(int position) {
                 if (listener != null) {
-                    listener.onHistoryRecordClick();
+                    listener.onHistoryRecordClick(position);
                 }
             }
         });
@@ -147,12 +151,13 @@ public class SearchWidget extends LinearLayout {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+                    String content = v.getText().toString();
+                    SearchRecordLab.get(context).addSearchRecord(content);
+                    mAdapter.notifyDataSetChanged();
+                    v.setText("");
+                    mArrayAdapter.add(content);
                     if (listener != null) {
-                        String content = v.getText().toString();
-                        SearchRecordLab.get(context).addSearchRecord(content);
-                        mAdapter.notifyDataSetChanged();
-                        v.setText("");
-                        listener.onSearchAction();
+                        listener.onSearchAction(content);
                     }
                     return true;
                 }
@@ -165,8 +170,8 @@ public class SearchWidget extends LinearLayout {
     //第一步 定义接口
     public interface OnIconClickListener {
         void onRightClick();
-        void onHistoryRecordClick();
-        void onSearchAction();
+        void onHistoryRecordClick(int position);
+        void onSearchAction(String content);
     }
 
     private OnIconClickListener listener;
