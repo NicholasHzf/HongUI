@@ -8,4 +8,24 @@
         <attr name="empty_icon_iv" format="reference" />
     </declare-styleable>
 
+    <declare-styleable name="WeekDisplay">
+        <attr name="bg_color" format="reference" />
+        <attr name="text_day_color" format="reference" />
+        <attr name="text_date_color" format="reference" />
+        <attr name="dot_color" format="color" />
+        <attr name="selected" format="boolean" />
+        <attr name="with_data" format="boolean" />
+        <attr name="padding_day_lr" format="dimension" />
+        <attr name="padding_day_tb" format="dimension" />
+        <attr name="padding_date_dot" format="dimension" />
+        <attr name="mode">
+            <enum name = "MODE_NORMAL_THIS_WEEK" value="0" />
+            <enum name = "MODE_ENGLISH_THREE_THIS_WEEK" value="1" />
+            <enum name = "MODE_ENGLISH_SINGLE_THIS_WEEK" value="2" />
+            <enum name = "MODE_NORMAL" value="3" />
+            <enum name = "MODE_ENGLISH_THREE" value="4" />
+            <enum name = "MODE_ENGLISH_SINGLE" value="5" />
+        </attr>
+    </declare-styleable>
+
 </resources>

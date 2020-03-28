@@ -13,4 +13,50 @@
     <string name="alert_dialog_cancel_toast">操作已取消！</string>
     <string name="alert_dialog_msg_for_search_activity">是否删除所有历史记录？</string>
 
+    <!--WeekDisplay-->
+    <string-array name="calendarview__weektext_0">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>日</item>
+    </string-array>
+    <string-array name="calendarview__weektext_1">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+    <string-array name="calendarview__weektext_2">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+    <string-array name="calendarview__weektext_3">
+        <item>Mon</item>
+        <item>Tus</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+    <string-array name="calendarview__weektext_4">
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+        <item>S</item>
+    </string-array>
 </resources>

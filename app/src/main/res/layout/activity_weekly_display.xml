@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F8BEAC"
+    tools:context=".WeeklyDisplayActivity">
+
+    <com.hzf.nicholas.custom_ui.week_display.WeekDisplay
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@color/colorAccent"/>
+
+    <com.hzf.nicholas.custom_ui.week_display.WeekDisplay
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        app:with_data="true"
+        android:background="@color/colorPrimaryDark"/>
+
+    <com.hzf.nicholas.custom_ui.week_display.WeekDisplay
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        app:dot_color="@color/colorPrimaryDark"
+        app:padding_date_dot="4dp"
+        app:bg_color="@drawable/selector_week_display_bg"
+        app:text_date_color="@drawable/selector_week_display_date"
+        app:text_day_color="@drawable/selector_week_display_day"
+        app:selected="false"
+        app:mode="MODE_NORMAL"/>
+
+    <com.hzf.nicholas.custom_ui.week_display.WeekDisplay
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        app:padding_day_lr="4dp"
+        app:padding_day_tb="7dp"
+        app:padding_date_dot="-4dp"
+        app:bg_color="@drawable/selector_week_display_bg"
+        app:text_date_color="@drawable/selector_week_display_date"
+        app:text_day_color="@drawable/selector_week_display_day"
+        app:selected="true"
+        app:mode="MODE_NORMAL_THIS_WEEK"/>
+
+    <com.hzf.nicholas.custom_ui.week_display.WeekDisplay
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        app:padding_day_lr="20dp"
+        app:padding_day_tb="30dp"
+        app:bg_color="@drawable/selector_week_display_bg"
+        app:text_date_color="@drawable/selector_week_display_date"
+        app:text_day_color="@drawable/selector_week_display_day"
+        app:selected="false"
+        app:mode="MODE_ENGLISH_SINGLE"/>
+
+    <com.hzf.nicholas.custom_ui.week_display.WeekDisplay
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        app:bg_color="@drawable/selector_week_display_bg"
+        app:text_date_color="@drawable/selector_week_display_date"
+        app:text_day_color="@drawable/selector_week_display_day"
+        app:selected="true"
+        app:mode="MODE_ENGLISH_SINGLE_THIS_WEEK"/>
+
+    <com.hzf.nicholas.custom_ui.week_display.WeekDisplay
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        app:bg_color="@drawable/selector_week_display_bg"
+        app:text_date_color="@drawable/selector_week_display_date"
+        app:text_day_color="@drawable/selector_week_display_day"
+        app:selected="false"
+        app:mode="MODE_ENGLISH_THREE"/>
+
+    <com.hzf.nicholas.custom_ui.week_display.WeekDisplay
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        app:bg_color="@drawable/selector_week_display_bg"
+        app:text_date_color="@drawable/selector_week_display_date"
+        app:text_day_color="@drawable/selector_week_display_day"
+        app:selected="true"
+        app:mode="MODE_ENGLISH_THREE_THIS_WEEK"/>
+
+</LinearLayout>
