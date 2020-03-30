@@ -1,4 +1,4 @@
-package com.hzf.nicholas.custom_ui;
+package com.hzf.nicholas.custom_ui.search_widget;
 
 import org.litepal.annotation.Column;
 import org.litepal.crud.LitePalSupport;

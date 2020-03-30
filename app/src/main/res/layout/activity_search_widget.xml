@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".SearchWidgetActivity">
 
-    <com.hzf.nicholas.custom_ui.SearchWidget
+    <com.hzf.nicholas.custom_ui.search_widget.SearchWidget
         android:id="@+id/search_widget"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

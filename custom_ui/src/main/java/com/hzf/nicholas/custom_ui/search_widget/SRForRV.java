@@ -1,9 +1,11 @@
-package com.hzf.nicholas.custom_ui;
+package com.hzf.nicholas.custom_ui.search_widget;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.hzf.nicholas.custom_ui.R;
 
 import java.util.List;
 

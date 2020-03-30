@@ -6,8 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.hzf.nicholas.custom_ui.SearchRecordLab;
-import com.hzf.nicholas.custom_ui.SearchWidget;
+import com.hzf.nicholas.custom_ui.search_widget.SearchRecordLab;
+import com.hzf.nicholas.custom_ui.search_widget.SearchWidget;
 
 public class SearchWidgetActivity extends AppCompatActivity {
 

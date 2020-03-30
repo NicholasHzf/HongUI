@@ -1,4 +1,4 @@
-package com.hzf.nicholas.custom_ui;
+package com.hzf.nicholas.custom_ui.search_widget;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -19,11 +19,10 @@ import android.widget.Toast;
 import com.google.android.flexbox.AlignItems;
 import com.google.android.flexbox.FlexWrap;
 import com.google.android.flexbox.FlexboxLayoutManager;
+import com.hzf.nicholas.custom_ui.R;
 
 
 import org.litepal.LitePal;
-
-import java.util.Arrays;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;

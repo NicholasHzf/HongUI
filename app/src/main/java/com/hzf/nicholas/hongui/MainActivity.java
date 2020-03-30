@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button mSearchWidgetBtn;
     private Button mWeekDisplayBtn;
+    private Button mCircleDotBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,13 +20,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initElement();
         mSearchWidgetBtn.setOnClickListener(this);
         mWeekDisplayBtn.setOnClickListener(this);
+        mCircleDotBtn.setOnClickListener(this);
 
     }
 
     private void initElement(){
         //组件初始化
-        mSearchWidgetBtn = (Button) findViewById(R.id.activity_main_search_btn);
-        mWeekDisplayBtn = (Button) findViewById(R.id.activity_main_week_display_btn);
+        mSearchWidgetBtn = findViewById(R.id.activity_main_search_btn);
+        mWeekDisplayBtn = findViewById(R.id.activity_main_week_display_btn);
+        mCircleDotBtn = findViewById(R.id.activity_main_circle_dot_btn);
     }
 
     @Override
@@ -38,6 +41,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.activity_main_week_display_btn:
                 Intent intent2 = new Intent(this,WeeklyDisplayActivity.class);
                 startActivity(intent2);
+                break;
+            case R.id.activity_main_circle_dot_btn:
+                Intent intent3 = new Intent(this,CircleDotActivity.class);
+                startActivity(intent3);
                 break;
             default:
                 break;

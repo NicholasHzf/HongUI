@@ -2,6 +2,7 @@
     <string name="app_name">HongUI</string>
 
     <string name="search_widget_btn">进入搜索组件demo</string>
-    <string name="week_display_btn">进入周历组件demo</string>
+    <string name="week_display_btn">进入周历控件demo</string>
+    <string name="circle_dot_btn">进入圆点控件demo</string>
 
 </resources>

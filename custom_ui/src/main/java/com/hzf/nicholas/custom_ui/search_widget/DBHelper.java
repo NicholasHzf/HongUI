@@ -1,4 +1,4 @@
-package com.hzf.nicholas.custom_ui;
+package com.hzf.nicholas.custom_ui.search_widget;
 
 import android.database.sqlite.SQLiteDatabase;
 
