@@ -1,24 +1,7 @@
 # HongUI
 Create this HongUI repository just for personal interest. 
 
----
-
-[CSDN Blog](https://blog.csdn.net/Nicholas1hzf/article/details/104377358)
-- 2020.2.18 version:1.1.0 更新：新增自动补全功能，修改了点击事件的参数，添加截图
-- 2020.3.30 version:2.0.0 更新：新增周历展示控件，圆点控件，添加截图
-
----
-
-## a circle dot widget
-##### 一个圆点控件，可用于无序列表的圆点，或者可选择的一横排圆点
-
-**screenshot**
-
-![GitHub](https://github.com/NicholasHzf/HongUI/raw/master/screenshot/circle_dot.png) 
-
-**How to use:**
-
-**Step 1. Add the JitPack repository to your build file**
+**Add the JitPack repository to your build file**
 - Gradle:
 ```java
 allprojects {
@@ -47,6 +30,24 @@ dependencies {
 	<version>2.0.0</version>
 </dependency>
 ```
+---
+
+[CSDN Blog](https://blog.csdn.net/Nicholas1hzf/article/details/104377358)
+- 2020.2.18 version:1.1.0 更新：新增自动补全功能，修改了点击事件的参数，添加截图
+- 2020.3.30 version:2.0.0 更新：新增周历展示控件，圆点控件，添加截图
+
+---
+
+## a circle dot widget
+##### 一个圆点控件，可用于无序列表的圆点，或者可选择的一横排圆点
+
+**screenshot**
+
+![GitHub](https://github.com/NicholasHzf/HongUI/raw/master/screenshot/circle_dot.png) 
+
+**How to use:**
+
+**Step 1. Add the JitPack repository to your build file**
 **Step 2. Use it in your own layout file:**
 
 |attr|default  |mean |
@@ -106,34 +107,6 @@ mCircleDot.setOnClickListener(new CircleDot.OnClickListener() {
 **How to use:**
 
 **Step 1. Add the JitPack repository to your build file**
-- Gradle:
-```java
-allprojects {
-	repositories {
-		...
-		maven { url 'https://jitpack.io' }
-	}
-}
-
-dependencies {
-	implementation 'com.github.NicholasHzf:HongUI:2.0.0'
-}
-```
-- maven
-```xml
-<repositories>
-	<repository>
-		<id>jitpack.io</id>
-		<url>https://jitpack.io</url>
-	</repository>
-</repositories>
-
-<dependency>
-	<groupId>com.github.NicholasHzf</groupId>
-	<artifactId>HongUI</artifactId>
-	<version>2.0.0</version>
-</dependency>
-```
 **Step 2. Use it in your own layout file:**
 
 |attr|default  |mean |
@@ -198,34 +171,6 @@ weekDisplay.setOnItemClickListener(new WeekDisplay.OnItemClickListener() {
 **How to use:**
 
 **Step 1. Add the JitPack repository to your build file**
-- Gradle:
-```java
-allprojects {
-	repositories {
-		...
-		maven { url 'https://jitpack.io' }
-	}
-}
-
-dependencies {
-	implementation 'com.github.NicholasHzf:HongUI:1.1.0'
-}
-```
-- maven
-```xml
-<repositories>
-	<repository>
-		<id>jitpack.io</id>
-		<url>https://jitpack.io</url>
-	</repository>
-</repositories>
-
-<dependency>
-	<groupId>com.github.NicholasHzf</groupId>
-	<artifactId>HongUI</artifactId>
-	<version>1.1.0</version>
-</dependency>
-```
 **Step 2. Use it in your own layout file:**
 |attr|default  |mean |
 |--|--|--|
