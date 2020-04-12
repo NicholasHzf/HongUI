@@ -156,26 +156,6 @@ public class DateAndTime {
         return result;
     }
 
-//    //获取未来某天的年月日
-//    public static String getFutureDate(int future){
-//        Calendar calendar = Calendar.getInstance();
-//        calendar.set(Calendar.DAY_OF_YEAR, calendar.get(Calendar.DAY_OF_YEAR) + future);
-//        Date today = calendar.getTime();
-//        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-//        String result = format.format(today);
-//        return result;
-//    }
-//
-//    //获取过去某天的年月日
-//    public static String getPastDate(int future){
-//        Calendar calendar = Calendar.getInstance();
-//        calendar.set(Calendar.DAY_OF_YEAR, calendar.get(Calendar.DAY_OF_YEAR) - future);
-//        Date today = calendar.getTime();
-//        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-//        String result = format.format(today);
-//        return result;
-//    }
-
     /**
      * 获取本周的第一天
      * @return String
@@ -196,24 +176,4 @@ public class DateAndTime {
         Date monday = cd.getTime();
         return new SimpleDateFormat("yyyy-MM-dd").format(monday);
     }
-//
-//    //某天到今天共有多少天（某天，今天都算在内）
-//    public static int intervalsDates(String dateString2) {
-//        Date date = Calendar.getInstance().getTime();
-//        java.text.DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-//        Date date1 = null;
-//        Date date2 = null;
-//        try {
-//            date1 = format.parse(format.format(date)+" 00:00:00");
-//            date2 = format.parse(dateString2+" 00:00:00");
-//        } catch (ParseException e) {
-//            e.printStackTrace();
-//        }
-//        long interval = (date2.getTime() - date1.getTime()) / (1000*3600*24);
-//        if (interval<0){
-//            interval = interval*(-1);
-//        }
-//        int dates = (int) (interval+1);
-//        return dates;
-//    }
 }

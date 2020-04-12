@@ -159,7 +159,7 @@ public class WeekDisplay extends View {
                 for (String s : fullText2) {
                     weekText.add(s.substring(0,1));
                 }
-                dayText = DateAndTime.getThisWeekDates();
+                dayText = DateAndTime.getFutureSevenDates();
                 break;
         }
 
